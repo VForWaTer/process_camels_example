@@ -7,7 +7,7 @@ cd /hyras_cache
 # download the hyras Precipitation for the given years
 mkdir -p /hyras_cache/Precipitation
 cd /hyras_cache/Precipitation
-for year in {1980..1990}
+for year in {$START_YEAR..$END_YEAR}
 do
     wget https://opendata.dwd.de/climate_environment/CDC/grids_germany/daily/hyras_de/precipitation/pr_hyras_1_${year}_v5-0_de.nc
 done
